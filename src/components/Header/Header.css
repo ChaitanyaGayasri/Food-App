@@ -1,0 +1,70 @@
+.header{
+    height: 34vw;
+    margin: 30px auto;
+    background: url('/header_img.png' ) no-repeat;
+    background-size: contain;
+    position: relative;
+}
+
+.header-content{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 1.5vw;
+    max-width: 50%;
+    bottom: 10%;
+    left: 6vw;
+    animation: fadeIn 3s;
+}
+
+.header-content h1{
+    font-family: "Roboto";
+    font-weight: bold;
+    color: #fff;
+}
+
+.header-content p{
+    font-family: "Roboto";
+    font-weight: 400;
+
+}
+
+.btn {
+
+    font-size: 16px;
+    color: gray;
+    border: 1px solid tomato;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (max-width:1050px) {
+   
+    .header-content {
+        max-width: 45%;
+    }
+}
+
+@media (max-width:750px) {
+    .header-content {
+        max-width: 65%;
+    }
+    .header-content p {
+        display: none;
+    }
+    .header-content button {
+        padding: 2w 4vw;
+    }
+}
+
